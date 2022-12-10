@@ -21,14 +21,10 @@ class GraphViewController: NSViewController {
         super.viewDidLoad()
     }
     
-    
     override func viewDidAppear() {
         super.viewDidAppear()
-        view.window?.title = "Domain Coloring!"
         
         graphFunction()
-        
-        
     }
     
     // MARK: View Updates
@@ -43,6 +39,13 @@ class GraphViewController: NSViewController {
     }
     
     // MARK: View Functoins
+    
+    /**
+     * Toggle showing the magnitude
+     */
+    func showMagnitudeUpdated(to showMagnitude: Bool) {
+        print("Gonna show mag: \(showMagnitude)")
+    }
     
     /**
      * Release the constraints on the graphView so that the view can be resized
@@ -65,7 +68,7 @@ class GraphViewController: NSViewController {
             multiplier: 1,
             constant: 0
         )
-        
+
         let leadingConstraint = NSLayoutConstraint(
             item: graphView as Any,
             attribute: .leading,
@@ -75,7 +78,7 @@ class GraphViewController: NSViewController {
             multiplier: 1,
             constant: 0
         )
-        
+
         let bottomConstraint = NSLayoutConstraint(
             item: graphView as Any,
             attribute: .bottom,
@@ -85,7 +88,7 @@ class GraphViewController: NSViewController {
             multiplier: 1,
             constant: 0
         )
-        
+
         let trailingConstraint = NSLayoutConstraint(
             item: graphView as Any,
             attribute: .trailing,
@@ -95,7 +98,7 @@ class GraphViewController: NSViewController {
             multiplier: 1,
             constant: 0
         )
-        
+
         NSLayoutConstraint.activate([topConstraint, bottomConstraint, leadingConstraint, trailingConstraint])
     }
     

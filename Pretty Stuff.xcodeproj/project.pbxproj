@@ -23,10 +23,11 @@
 		AEB30D4728BD426100EB8B8E /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = AEB30D4628BD426100EB8B8E /* RealModule */; };
 		AEB30D4A28BD427800EB8B8E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4928BD427800EB8B8E /* Line.swift */; };
 		AEB30D4C28BD428000EB8B8E /* Mandlebrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4B28BD428000EB8B8E /* Mandlebrot.swift */; };
-		AEB30D4E28BD432700EB8B8E /* GraphWindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */; };
+		AEB30D4E28BD432700EB8B8E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4D28BD432700EB8B8E /* MainWindowController.swift */; };
 		AEB30D5128BD43E900EB8B8E /* Complex Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */; };
 		AEB30D5328BD465F00EB8B8E /* Axes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5228BD465F00EB8B8E /* Axes.swift */; };
 		AEB30D5528BD49AF00EB8B8E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5428BD49AF00EB8B8E /* Colors.swift */; };
+		AEB5CA7129453B4300C364EA /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5CA7029453B4300C364EA /* SidePanelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +65,11 @@
 		AEB30D3F28BD424F00EB8B8E /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		AEB30D4928BD427800EB8B8E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		AEB30D4B28BD428000EB8B8E /* Mandlebrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mandlebrot.swift; sourceTree = "<group>"; };
-		AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphWindowDelegate.swift; sourceTree = "<group>"; };
+		AEB30D4D28BD432700EB8B8E /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Complex Arithmetic.swift"; sourceTree = "<group>"; };
 		AEB30D5228BD465F00EB8B8E /* Axes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axes.swift; sourceTree = "<group>"; };
 		AEB30D5428BD49AF00EB8B8E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AEB5CA7029453B4300C364EA /* SidePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +123,7 @@
 		AEB30D0B28BD41DC00EB8B8E /* Pretty Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */,
-				AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */,
+				AEB5CA6F29453AA400C364EA /* View */,
 				AEB30D3A28BD420500EB8B8E /* Math */,
 				AEB30D3728BD41E900EB8B8E /* Image Utility */,
 				AEB30D0C28BD41DC00EB8B8E /* AppDelegate.swift */,
@@ -187,6 +188,16 @@
 				AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */,
 			);
 			path = Complex;
+			sourceTree = "<group>";
+		};
+		AEB5CA6F29453AA400C364EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */,
+				AEB30D4D28BD432700EB8B8E /* MainWindowController.swift */,
+				AEB5CA7029453B4300C364EA /* SidePanelViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,9 +343,10 @@
 				AEB30D3928BD41F800EB8B8E /* Image Utility.swift in Sources */,
 				AEB30D4028BD424F00EB8B8E /* Set.swift in Sources */,
 				AEB30D4C28BD428000EB8B8E /* Mandlebrot.swift in Sources */,
-				AEB30D4E28BD432700EB8B8E /* GraphWindowDelegate.swift in Sources */,
+				AEB30D4E28BD432700EB8B8E /* MainWindowController.swift in Sources */,
 				AEB30D3C28BD421B00EB8B8E /* Vector.swift in Sources */,
 				AEB30D0D28BD41DC00EB8B8E /* AppDelegate.swift in Sources */,
+				AEB5CA7129453B4300C364EA /* SidePanelViewController.swift in Sources */,
 				AEB30D5328BD465F00EB8B8E /* Axes.swift in Sources */,
 				AEB30D5128BD43E900EB8B8E /* Complex Arithmetic.swift in Sources */,
 				AEB30D4A28BD427800EB8B8E /* Line.swift in Sources */,

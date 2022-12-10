@@ -1,5 +1,5 @@
 //
-//  GraphWindowDelegate.swift
+//  MainWindowController.swift
 //  Pretty Stuff
 //
 //  Created by Sylvan Martin on 8/29/22.
@@ -7,34 +7,27 @@
 
 import AppKit
 
-class GraphWindowDelegate: NSWindowController, NSWindowDelegate {
+class MainWindowController: NSWindowController, NSWindowDelegate {
     
     // MARK: Window Properties
+    
+    var splitVC: NSSplitViewController {
+        contentViewController as! NSSplitViewController
+    }
+    
+    var sidePanelController: SidePanelViewController {
+        splitVC.splitViewItems[0].viewController as! SidePanelViewController
+    }
     
     /**
      * The graph shown in this view
      */
     var graphViewController: GraphViewController {
-        contentViewController as! GraphViewController
+        splitVC.splitViewItems[1].viewController as! GraphViewController
     }
     
     // MARK: Window Controller
     
-    /**
-     * Called when the window is about to resize
-     */
-    func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
-        
-        // we want to fix the aspect ratio
-        
-        let aspectRatio = Function.window.aspectRatio
-        
-        let heightAdjusted  = NSSize(width: (frameSize.height * CGFloat(aspectRatio)), height: frameSize.height)
-        let widthAdjusted   = NSSize(width: frameSize.width, height: frameSize.width / CGFloat(aspectRatio))
-            
-        return sender.frame.height != frameSize.height ? heightAdjusted : widthAdjusted
-    }
-
     /**
      * Called when the window is starting to be resized
      */
@@ -50,6 +43,10 @@ class GraphWindowDelegate: NSWindowController, NSWindowDelegate {
     }
     
     // MARK: Actions
+    
+    func magSwitchUpdated(to showMagnitude: Bool) {
+        graphViewController.showMagnitudeUpdated(to: showMagnitude)
+    }
     
     @IBAction func leftTranslate(_ sender: Any) {
         var amount = graphViewController.funcWindow.horizontal.upperBound - graphViewController.funcWindow.horizontal.lowerBound
