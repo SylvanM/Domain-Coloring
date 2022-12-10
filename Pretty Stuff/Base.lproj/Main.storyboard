@@ -686,8 +686,8 @@
         <scene sceneID="qVy-KL-goq">
             <objects>
                 <windowController id="TXw-nH-hsu" customClass="MainWindowController" customModule="Pretty_Stuff" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="WqH-Hz-yDv">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                    <window key="window" title="Domain Coloring" subtitle="By Sylvan Martin" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="WqH-Hz-yDv">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="211" y="270" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1512" height="950"/>
@@ -695,37 +695,28 @@
                             <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
-                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="t1t-c1-q0D">
+                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" centeredItem="qRn-IQ-XXm" autosavesConfiguration="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="t1t-c1-q0D">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Nib-6A-zWh"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="4r1-1e-RGe"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="bhi-pM-jvC"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="azb-5q-Q2y"/>
-                                <toolbarItem implicitItemIdentifier="D332F2E0-F28E-4AB6-ACEC-F5D0D5AF441F" label="" paletteLabel="" tag="-1" image="arrowshape.left.fill" catalog="system" bordered="YES" title="Shift Left" selectable="YES" id="7HZ-gS-5of">
+                                <toolbarItem implicitItemIdentifier="D332F2E0-F28E-4AB6-ACEC-F5D0D5AF441F" label="" paletteLabel="" tag="-1" image="arrowshape.left.fill" catalog="system" title="Shift Left" autovalidates="NO" selectable="YES" id="7HZ-gS-5of">
                                     <size key="minSize" width="4" height="16"/>
                                     <size key="maxSize" width="60" height="16"/>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="A56A74B1-1DED-4EAC-91F3-68E4E2E00DA5" label="" paletteLabel="" tag="-1" image="arrowshape.right.fill" catalog="system" bordered="YES" title="Shift Right" selectable="YES" id="4nQ-bT-Gvt">
+                                <toolbarItem implicitItemIdentifier="A56A74B1-1DED-4EAC-91F3-68E4E2E00DA5" label="" paletteLabel="" tag="-1" image="arrowshape.right.fill" catalog="system" bordered="YES" title="Shift Right" autovalidates="NO" selectable="YES" id="4nQ-bT-Gvt">
                                     <size key="minSize" width="99" height="25"/>
                                     <size key="maxSize" width="99" height="25"/>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="HHr-4Z-AKo"/>
-                                <toolbarItem implicitItemIdentifier="666FC103-CCAC-4618-BDF6-961042657F83" label="" paletteLabel="" tag="-1" image="plus" catalog="system" bordered="YES" selectable="YES" id="qRn-IQ-XXm">
+                                <toolbarItem implicitItemIdentifier="666FC103-CCAC-4618-BDF6-961042657F83" label="" paletteLabel="" tag="-1" image="plus" catalog="system" bordered="YES" autovalidates="NO" selectable="YES" id="qRn-IQ-XXm">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="2D1BA59B-864C-4FD2-85D0-EE164E11EAAD" label="" paletteLabel="" tag="-1" image="minus" catalog="system" bordered="YES" selectable="YES" id="7xy-VT-S9w">
+                                <toolbarItem implicitItemIdentifier="2D1BA59B-864C-4FD2-85D0-EE164E11EAAD" label="" paletteLabel="" tag="-1" image="minus" catalog="system" bordered="YES" autovalidates="NO" selectable="YES" id="7xy-VT-S9w">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                 </toolbarItem>
                             </allowedToolbarItems>
-                            <defaultToolbarItems>
-                                <toolbarItem reference="qRn-IQ-XXm"/>
-                                <toolbarItem reference="7xy-VT-S9w"/>
-                                <toolbarItem reference="HHr-4Z-AKo"/>
-                                <toolbarItem reference="7HZ-gS-5of"/>
-                                <toolbarItem reference="4nQ-bT-Gvt"/>
-                            </defaultToolbarItems>
+                            <defaultToolbarItems/>
                         </toolbar>
                         <connections>
                             <outlet property="delegate" destination="TXw-nH-hsu" id="4OJ-C7-r3P"/>
