@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AEB30D0D28BD41DC00EB8B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D0C28BD41DC00EB8B8E /* AppDelegate.swift */; };
-		AEB30D0F28BD41DC00EB8B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D0E28BD41DC00EB8B8E /* ViewController.swift */; };
+		AEB30D0F28BD41DC00EB8B8E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */; };
 		AEB30D1128BD41DD00EB8B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB30D1028BD41DD00EB8B8E /* Assets.xcassets */; };
 		AEB30D1428BD41DD00EB8B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB30D1228BD41DD00EB8B8E /* Main.storyboard */; };
 		AEB30D1F28BD41DD00EB8B8E /* Pretty_StuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D1E28BD41DD00EB8B8E /* Pretty_StuffTests.swift */; };
 		AEB30D2928BD41DD00EB8B8E /* Pretty_StuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D2828BD41DD00EB8B8E /* Pretty_StuffUITests.swift */; };
 		AEB30D2B28BD41DD00EB8B8E /* Pretty_StuffUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D2A28BD41DD00EB8B8E /* Pretty_StuffUITestsLaunchTests.swift */; };
+		AEB30D3928BD41F800EB8B8E /* Image Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D3828BD41F800EB8B8E /* Image Utility.swift */; };
+		AEB30D3C28BD421B00EB8B8E /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D3B28BD421B00EB8B8E /* Vector.swift */; };
+		AEB30D3E28BD424100EB8B8E /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D3D28BD424100EB8B8E /* Function.swift */; };
+		AEB30D4028BD424F00EB8B8E /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D3F28BD424F00EB8B8E /* Set.swift */; };
+		AEB30D4328BD426100EB8B8E /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = AEB30D4228BD426100EB8B8E /* ComplexModule */; };
+		AEB30D4528BD426100EB8B8E /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = AEB30D4428BD426100EB8B8E /* Numerics */; };
+		AEB30D4728BD426100EB8B8E /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = AEB30D4628BD426100EB8B8E /* RealModule */; };
+		AEB30D4A28BD427800EB8B8E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4928BD427800EB8B8E /* Line.swift */; };
+		AEB30D4C28BD428000EB8B8E /* Mandlebrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4B28BD428000EB8B8E /* Mandlebrot.swift */; };
+		AEB30D4E28BD432700EB8B8E /* GraphWindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */; };
+		AEB30D5128BD43E900EB8B8E /* Complex Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */; };
+		AEB30D5328BD465F00EB8B8E /* Axes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5228BD465F00EB8B8E /* Axes.swift */; };
+		AEB30D5528BD49AF00EB8B8E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB30D5428BD49AF00EB8B8E /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,7 @@
 /* Begin PBXFileReference section */
 		AEB30D0928BD41DC00EB8B8E /* Pretty Stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty Stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB30D0C28BD41DC00EB8B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEB30D0E28BD41DC00EB8B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		AEB30D1028BD41DD00EB8B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB30D1328BD41DD00EB8B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEB30D1528BD41DD00EB8B8E /* Pretty_Stuff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pretty_Stuff.entitlements; sourceTree = "<group>"; };
@@ -45,6 +58,16 @@
 		AEB30D2428BD41DD00EB8B8E /* Pretty StuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pretty StuffUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB30D2828BD41DD00EB8B8E /* Pretty_StuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_StuffUITests.swift; sourceTree = "<group>"; };
 		AEB30D2A28BD41DD00EB8B8E /* Pretty_StuffUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_StuffUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEB30D3828BD41F800EB8B8E /* Image Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Utility.swift"; sourceTree = "<group>"; };
+		AEB30D3B28BD421B00EB8B8E /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		AEB30D3D28BD424100EB8B8E /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		AEB30D3F28BD424F00EB8B8E /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		AEB30D4928BD427800EB8B8E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		AEB30D4B28BD428000EB8B8E /* Mandlebrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mandlebrot.swift; sourceTree = "<group>"; };
+		AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphWindowDelegate.swift; sourceTree = "<group>"; };
+		AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Complex Arithmetic.swift"; sourceTree = "<group>"; };
+		AEB30D5228BD465F00EB8B8E /* Axes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axes.swift; sourceTree = "<group>"; };
+		AEB30D5428BD49AF00EB8B8E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB30D4528BD426100EB8B8E /* Numerics in Frameworks */,
+				AEB30D4328BD426100EB8B8E /* ComplexModule in Frameworks */,
+				AEB30D4728BD426100EB8B8E /* RealModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +121,11 @@
 		AEB30D0B28BD41DC00EB8B8E /* Pretty Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */,
+				AEB30D4D28BD432700EB8B8E /* GraphWindowDelegate.swift */,
+				AEB30D3A28BD420500EB8B8E /* Math */,
+				AEB30D3728BD41E900EB8B8E /* Image Utility */,
 				AEB30D0C28BD41DC00EB8B8E /* AppDelegate.swift */,
-				AEB30D0E28BD41DC00EB8B8E /* ViewController.swift */,
 				AEB30D1028BD41DD00EB8B8E /* Assets.xcassets */,
 				AEB30D1228BD41DD00EB8B8E /* Main.storyboard */,
 				AEB30D1528BD41DD00EB8B8E /* Pretty_Stuff.entitlements */,
@@ -121,6 +150,45 @@
 			path = "Pretty StuffUITests";
 			sourceTree = "<group>";
 		};
+		AEB30D3728BD41E900EB8B8E /* Image Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AEB30D3828BD41F800EB8B8E /* Image Utility.swift */,
+				AEB30D5428BD49AF00EB8B8E /* Colors.swift */,
+			);
+			path = "Image Utility";
+			sourceTree = "<group>";
+		};
+		AEB30D3A28BD420500EB8B8E /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				AEB30D4F28BD438E00EB8B8E /* Complex */,
+				AEB30D4828BD426F00EB8B8E /* Shapes */,
+				AEB30D3B28BD421B00EB8B8E /* Vector.swift */,
+				AEB30D3D28BD424100EB8B8E /* Function.swift */,
+				AEB30D3F28BD424F00EB8B8E /* Set.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		AEB30D4828BD426F00EB8B8E /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				AEB30D4928BD427800EB8B8E /* Line.swift */,
+				AEB30D4B28BD428000EB8B8E /* Mandlebrot.swift */,
+				AEB30D5228BD465F00EB8B8E /* Axes.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		AEB30D4F28BD438E00EB8B8E /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				AEB30D5028BD43E900EB8B8E /* Complex Arithmetic.swift */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +205,11 @@
 			dependencies = (
 			);
 			name = "Pretty Stuff";
+			packageProductDependencies = (
+				AEB30D4228BD426100EB8B8E /* ComplexModule */,
+				AEB30D4428BD426100EB8B8E /* Numerics */,
+				AEB30D4628BD426100EB8B8E /* RealModule */,
+			);
 			productName = "Pretty Stuff";
 			productReference = AEB30D0928BD41DC00EB8B8E /* Pretty Stuff.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +282,9 @@
 				Base,
 			);
 			mainGroup = AEB30D0028BD41DC00EB8B8E;
+			packageReferences = (
+				AEB30D4128BD426100EB8B8E /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = AEB30D0A28BD41DC00EB8B8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,8 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB30D0F28BD41DC00EB8B8E /* ViewController.swift in Sources */,
+				AEB30D0F28BD41DC00EB8B8E /* GraphViewController.swift in Sources */,
+				AEB30D5528BD49AF00EB8B8E /* Colors.swift in Sources */,
+				AEB30D3928BD41F800EB8B8E /* Image Utility.swift in Sources */,
+				AEB30D4028BD424F00EB8B8E /* Set.swift in Sources */,
+				AEB30D4C28BD428000EB8B8E /* Mandlebrot.swift in Sources */,
+				AEB30D4E28BD432700EB8B8E /* GraphWindowDelegate.swift in Sources */,
+				AEB30D3C28BD421B00EB8B8E /* Vector.swift in Sources */,
 				AEB30D0D28BD41DC00EB8B8E /* AppDelegate.swift in Sources */,
+				AEB30D5328BD465F00EB8B8E /* Axes.swift in Sources */,
+				AEB30D5128BD43E900EB8B8E /* Complex Arithmetic.swift in Sources */,
+				AEB30D4A28BD427800EB8B8E /* Line.swift in Sources */,
+				AEB30D3E28BD424100EB8B8E /* Function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +665,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEB30D4128BD426100EB8B8E /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEB30D4228BD426100EB8B8E /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB30D4128BD426100EB8B8E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		AEB30D4428BD426100EB8B8E /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB30D4128BD426100EB8B8E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		AEB30D4628BD426100EB8B8E /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEB30D4128BD426100EB8B8E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AEB30D0128BD41DC00EB8B8E /* Project object */;
 }

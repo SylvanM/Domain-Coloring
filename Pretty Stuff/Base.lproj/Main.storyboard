@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,45 +676,203 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pretty_Stuff" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="76" y="-146"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="GraphWindowDelegate" customModule="Pretty_Stuff" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="6F0381B6-9D72-48FE-A44C-D41E48B8E0FB" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="KEb-jn-4Cr">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="jzZ-qw-ART"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="GM9-Xy-9su"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="gdk-HY-4yX"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="hMr-3o-gaw"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="YqR-4R-Ynq"/>
+                                <toolbarItem implicitItemIdentifier="F2B5C5EB-F83D-4D0E-AA72-C3E8394667EF" label="Translate Left" paletteLabel="Translate Left" tag="-1" image="NSGoLeftTemplate" selectable="YES" id="qoR-j1-UY2">
+                                    <size key="minSize" width="24" height="28"/>
+                                    <size key="maxSize" width="24" height="28"/>
+                                    <connections>
+                                        <action selector="leftTranslate:" target="B8D-0N-5wS" id="ivD-w2-M4g"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="25395457-1D06-4B2F-9F7F-FA0C8E6FC734" label="Translate Right" paletteLabel="Translate RIght" tag="-1" image="NSGoRightTemplate" selectable="YES" id="slT-jR-H6i">
+                                    <size key="minSize" width="24.5" height="28"/>
+                                    <size key="maxSize" width="24.5" height="28"/>
+                                    <connections>
+                                        <action selector="rightTranslate:" target="B8D-0N-5wS" id="PTw-Lf-yKG"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="DAE96D77-7BBA-4EE9-9139-4062F9FFF412" label="Zoom In" paletteLabel="Zoom In" tag="-1" image="plus.magnifyingglass" catalog="system" selectable="YES" id="fi4-4c-a9W">
+                                    <size key="minSize" width="38.5" height="31"/>
+                                    <size key="maxSize" width="38.5" height="31"/>
+                                    <connections>
+                                        <action selector="zoomIn:" target="B8D-0N-5wS" id="PRR-8E-O2O"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="F711EA09-E33C-4F52-A075-ED831A433021" label="Zoom Out" paletteLabel="Zoom Out" tag="-1" image="minus.magnifyingglass" catalog="system" selectable="YES" id="txm-NB-Qxi">
+                                    <size key="minSize" width="38.5" height="31"/>
+                                    <size key="maxSize" width="38.5" height="31"/>
+                                    <connections>
+                                        <action selector="zoomOut:" target="B8D-0N-5wS" id="EuW-sY-viF"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="qoR-j1-UY2"/>
+                                <toolbarItem reference="slT-jR-H6i"/>
+                                <toolbarItem reference="fi4-4c-a9W"/>
+                                <toolbarItem reference="txm-NB-Qxi"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="leftTranslate" destination="qoR-j1-UY2" id="zgH-bA-Jp7"/>
+                        <outlet property="rightTranslate" destination="fi4-4c-a9W" id="LZ4-SS-3i7"/>
+                        <outlet property="zoomIn" destination="fi4-4c-a9W" id="bpI-BP-XTA"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-527" y="424"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="qVy-KL-goq">
+            <objects>
+                <windowController id="TXw-nH-hsu" customClass="GraphWindowDelegate" customModule="Pretty_Stuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="WqH-Hz-yDv">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="211" y="270" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1512" height="950"/>
+                        <view key="contentView" id="apu-Bx-QNS">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <toolbar key="toolbar" implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="t1t-c1-q0D">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="Nib-6A-zWh"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="4r1-1e-RGe"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="bhi-pM-jvC"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="azb-5q-Q2y"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="HHr-4Z-AKo"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="Nib-6A-zWh"/>
+                                <toolbarItem reference="4r1-1e-RGe"/>
+                                <toolbarItem reference="HHr-4Z-AKo"/>
+                                <toolbarItem reference="bhi-pM-jvC"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="TXw-nH-hsu" id="4OJ-C7-r3P"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="rWg-he-4yn" kind="relationship" relationship="window.shadowedContentViewController" id="3ne-9A-YAy"/>
+                    </connections>
+                </windowController>
+                <customObject id="B91-Ch-TPH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="115"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="kIS-kN-EdQ">
+            <objects>
+                <splitViewController id="rWg-he-4yn" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="OAg-JL-E7a"/>
+                        <splitViewItem id="BCm-ND-Ui6"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Qdm-u9-HBA">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="FZh-V2-C4b" kind="relationship" relationship="splitItems" id="doP-Vr-D40"/>
+                        <segue destination="lT1-Go-x8c" kind="relationship" relationship="splitItems" id="BvC-J5-mBB"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="o5p-ad-df8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="152"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="mSD-v2-roY">
+            <objects>
+                <viewController id="FZh-V2-C4b" sceneMemberID="viewController">
+                    <view key="view" id="YMN-PD-DBD">
+                        <rect key="frame" x="0.0" y="0.0" width="149" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="foG-EF-Jed"/>
+                        <viewLayoutGuide key="layoutMargins" id="jpV-ZX-umc"/>
+                    </view>
+                </viewController>
+                <customObject id="Bzr-O5-GJR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="152"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5H3-ey-tju">
+            <objects>
+                <viewController id="lT1-Go-x8c" sceneMemberID="viewController">
+                    <view key="view" id="dFU-kp-wuU">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <viewLayoutGuide key="safeArea" id="gDL-c7-bSY"/>
+                        <viewLayoutGuide key="layoutMargins" id="uxF-zu-7ER"/>
+                    </view>
+                </viewController>
+                <customObject id="fB1-fJ-QFs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="660"/>
+        </scene>
+        <!--Graph View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="GraphViewController" customModule="Pretty_Stuff" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-yF-KI2">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="veY-pP-ixL"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Br-yF-KI2" secondAttribute="trailing" id="Frb-ws-wiX"/>
+                            <constraint firstItem="7Br-yF-KI2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="a5Q-ZI-KXy"/>
+                            <constraint firstAttribute="bottom" secondItem="7Br-yF-KI2" secondAttribute="bottom" id="cXT-DM-T4Q"/>
+                            <constraint firstItem="7Br-yF-KI2" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="iGe-8Q-D0h"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graphView" destination="7Br-yF-KI2" id="HNy-5v-Z5N"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="315" y="668"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSGoLeftTemplate" width="12" height="17"/>
+        <image name="NSGoRightTemplate" width="12" height="17"/>
+        <image name="minus.magnifyingglass" catalog="system" width="16" height="15"/>
+        <image name="plus.magnifyingglass" catalog="system" width="16" height="15"/>
+    </resources>
 </document>
