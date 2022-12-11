@@ -74,31 +74,33 @@ extension NSImageView {
     /**
      * Converts a vector field to a 2D array of pixels to be displayed
      */
-    static func convertToPixels<VectorType: Vector2>(for field: VectorField<VectorType>) -> [UInt32] {
+    static func convertToPixels<VectorType: Vector2>(for field: VectorField<VectorType>, shouldShowMagnitude: Bool = true) -> [UInt32] {
         
-        field.vectors.flatMap {
+        
+        field.vectors.reversed().flatMap {
             $0.map { point -> UInt32 in
-                let hue = point.angleDegrees
                 
-                // TODO: Actually calculate the saturation
-                let saturation = compress(point.length, max: field.maxLength)
+                let hue = point.angleDegrees
+                let saturation: Double = 1
+                let value = shouldShowMagnitude ? compress(point.length, max: field.maxLength) : 1
+                
+                let c = value * saturation
+                let m = value - c
                 
                 var mid: Double {
                     let inner = (hue / 60).truncatingRemainder(dividingBy: 2)
-                    return saturation * (1 - abs(inner - 1))
+                    return c * (1 - abs(inner - 1))
                 }
                 
-                let m = 1 - saturation
-                
                 let rgbPrimes: [Double] =
-                     hue < 60  ? [saturation, mid, 0] :
-                    (hue < 120 ? [mid, saturation, 0] :
-                    (hue < 180 ? [0, saturation, mid] :
-                    (hue < 240 ? [0, mid, saturation] :
-                    (hue < 300 ? [mid, 0, saturation] :
-                                 [saturation, 0, mid]))))
+                     hue < 60  ? [c, mid, 0] :
+                    (hue < 120 ? [mid, c, 0] :
+                    (hue < 180 ? [0, c, mid] :
+                    (hue < 240 ? [0, mid, c] :
+                    (hue < 300 ? [mid, 0, c] :
+                                 [c, 0, mid]))))
                 
-                var rgba: [UInt8] = [0, 0, 0, UInt8(compress(point.length, max: field.maxLength) * 255)]
+                var rgba: [UInt8] = [0, 0, 0, 255]
                 
                 for i in 0...2 { rgba[i] = UInt8((rgbPrimes[i] + m) * 255) }
                 

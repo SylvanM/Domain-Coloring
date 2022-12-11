@@ -12,8 +12,11 @@ class GraphViewController: NSViewController {
     // MARK: Properties
     
     @IBOutlet weak var graphView: NSImageView!
+    @IBOutlet weak var overlayImage: OverlayView!
     
     var funcWindow = Function.window
+    
+    var shouldShowMagnitude = true
     
     // MARK: View Controller
 
@@ -44,7 +47,8 @@ class GraphViewController: NSViewController {
      * Toggle showing the magnitude
      */
     func showMagnitudeUpdated(to showMagnitude: Bool) {
-        print("Gonna show mag: \(showMagnitude)")
+        shouldShowMagnitude = showMagnitude
+        graphFunction()
     }
     
     /**
@@ -109,16 +113,21 @@ class GraphViewController: NSViewController {
         
         var vectorField = VectorField<Function.VectorType>(forFunction: Function.function, overWindow: funcWindow, forRect: graphView.bounds)
         
-        let horizontalAxis  = Set<Function.VectorType>.horizontalAxis(width: 0.001)
-        let verticalAxis    = Set<Function.VectorType>.verticalAxis(width: 0.001)
+        let horizontalAxis  = Set<Function.VectorType>.horizontalAxis(width: 0.005)
+        let verticalAxis    = Set<Function.VectorType>.verticalAxis(width: 0.005)
         
         vectorField.overlaySet(set: horizontalAxis, color: .black)
         vectorField.overlaySet(set: verticalAxis, color: .black)
         
-        let pixels = NSImageView.convertToPixels(for: vectorField)
+        let pixels = NSImageView.convertToPixels(for: vectorField, shouldShowMagnitude: shouldShowMagnitude)
 
         graphView.setPixels(pixels)
 
+    }
+    
+    func resetView() {
+        funcWindow = Function.window
+        graphFunction()
     }
 
 }

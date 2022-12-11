@@ -64,6 +64,7 @@ public struct VectorField<VectorType: Vector2> {
      *      - function: A Function from R^2 to R^2 to graph
      *      - window: Region over which to view the function
      *      - rect: Pixel dimensions of the view
+     *      - showMagnitude: Whether or not the magnitude should be taken into account, or just the argument.
      */
     init(forFunction function: Function2<VectorType>, overWindow window: Function.FunctionWindow, forRect rect: CGRect, shouldComputeDeltas: Bool = false) {
         

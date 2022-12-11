@@ -50,7 +50,7 @@ class MainWindowController: NSWindowController, NSWindowDelegate {
     
     @IBAction func leftTranslate(_ sender: Any) {
         var amount = graphViewController.funcWindow.horizontal.upperBound - graphViewController.funcWindow.horizontal.lowerBound
-        amount /= 3
+        amount /= 3 / sidePanelController.shiftSensitivity
         
         graphViewController.funcWindow = graphViewController.funcWindow.shifted(horizontalShift: -amount, verticalShift: 0)
         
@@ -59,20 +59,38 @@ class MainWindowController: NSWindowController, NSWindowDelegate {
     
     @IBAction func rightTranslate(_ sender: Any) {
         var amount = graphViewController.funcWindow.horizontal.upperBound - graphViewController.funcWindow.horizontal.lowerBound
-        amount /= 3
+        amount /= 3 / sidePanelController.shiftSensitivity
         
         graphViewController.funcWindow = graphViewController.funcWindow.shifted(horizontalShift: amount, verticalShift: 0)
         
         graphViewController.graphFunction()
     }
     
+    @IBAction func upTranslate(_ sender: Any) {
+        var amount = graphViewController.funcWindow.horizontal.upperBound - graphViewController.funcWindow.horizontal.lowerBound
+        amount /= 3 / sidePanelController.shiftSensitivity
+        
+        graphViewController.funcWindow = graphViewController.funcWindow.shifted(horizontalShift: 0, verticalShift: amount)
+        
+        graphViewController.graphFunction()
+    }
+    
+    @IBAction func downTranslate(_ sender: Any) {
+        var amount = graphViewController.funcWindow.horizontal.upperBound - graphViewController.funcWindow.horizontal.lowerBound
+        amount /= 3 / sidePanelController.shiftSensitivity
+        
+        graphViewController.funcWindow = graphViewController.funcWindow.shifted(horizontalShift: 0, verticalShift: -amount)
+        
+        graphViewController.graphFunction()
+    }
+    
     @IBAction func zoomIn(_ sender: Any) {
-        graphViewController.funcWindow = graphViewController.funcWindow.scaled(horizontal: 0.8, vertical: 0.8)
+        graphViewController.funcWindow = graphViewController.funcWindow.scaled(horizontal: 0.8 / sidePanelController.zoomSensitivity, vertical: 0.8 / sidePanelController.zoomSensitivity)
         graphViewController.graphFunction()
     }
     
     @IBAction func zoomOut(_ sender: Any) {
-        graphViewController.funcWindow = graphViewController.funcWindow.scaled(horizontal: 1.2, vertical: 1.2)
+        graphViewController.funcWindow = graphViewController.funcWindow.scaled(horizontal: 1.2 * sidePanelController.zoomSensitivity, vertical: 1.2 * sidePanelController.zoomSensitivity)
         graphViewController.graphFunction()
     }
     
