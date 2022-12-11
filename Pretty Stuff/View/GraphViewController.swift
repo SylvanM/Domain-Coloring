@@ -17,6 +17,7 @@ class GraphViewController: NSViewController {
     var funcWindow = Function.window
     
     var shouldShowMagnitude = true
+    var shouldShowAxes = true
     
     // MARK: View Controller
 
@@ -48,6 +49,11 @@ class GraphViewController: NSViewController {
      */
     func showMagnitudeUpdated(to showMagnitude: Bool) {
         shouldShowMagnitude = showMagnitude
+        graphFunction()
+    }
+    
+    func showAxesUpdated(to showAxes: Bool) {
+        shouldShowAxes = showAxes
         graphFunction()
     }
     
@@ -116,8 +122,10 @@ class GraphViewController: NSViewController {
         let horizontalAxis  = Set<Function.VectorType>.horizontalAxis(width: 0.005)
         let verticalAxis    = Set<Function.VectorType>.verticalAxis(width: 0.005)
         
-        vectorField.overlaySet(set: horizontalAxis, color: .black)
-        vectorField.overlaySet(set: verticalAxis, color: .black)
+        if shouldShowAxes {
+            vectorField.overlaySet(set: horizontalAxis, color: .black)
+            vectorField.overlaySet(set: verticalAxis, color: .black)
+        }
         
         let pixels = NSImageView.convertToPixels(for: vectorField, shouldShowMagnitude: shouldShowMagnitude)
 

@@ -13,6 +13,7 @@ class SidePanelViewController: NSViewController {
     private let maxZoomFactor:  Double = 2
     private let maxShiftFactor: Double = 2
     
+    
     // MARK: Properties
     
     var window: MainWindowController!
@@ -22,6 +23,8 @@ class SidePanelViewController: NSViewController {
     @IBOutlet weak var shiftSldier: NSSlider!
     
     @IBOutlet weak var zoomSlider: NSSlider!
+    
+    @IBOutlet weak var axesSwitch: NSSwitch!
     
     public var zoomSensitivity: Double {
         maxZoomFactor * zoomSlider.doubleValue / zoomSlider.maxValue
@@ -55,7 +58,7 @@ class SidePanelViewController: NSViewController {
         let msg = NSAlert()
         msg.addButton(withTitle: "Find Them!")      // 1st button
         msg.addButton(withTitle: "Cancel")  // 2nd button
-        msg.messageText = title ?? "The Argument Principle"
+        msg.messageText = "The Argument Principle"
         msg.informativeText = "Enter the real and imaginary coordinate and radius of a circle, and we'll find zeros and poles inside that circle."
 
         let realCoord = NSTextField(frame: NSRect(x: 0, y: 56, width: 200, height: 24))
@@ -83,14 +86,28 @@ class SidePanelViewController: NSViewController {
             
             let radius = Double(radius.stringValue)!
             let center = Complex(real, imag)
-
-            
             
             print("Looking for zeros \(radius) from \(center).")
+            
+            let number = Function.argumentPrinciple(around: center, radius: radius)
+            
+            print(number)
+            
+            let result = NSAlert()
+            result.addButton(withTitle: "Cool!")      // 1st button
+            result.messageText = "Here's what we found!"
+            result.informativeText = "Zeroes - Poles = \(number)"
+
+            result.runModal()
             
         } else {
             print("User Canceled finding zeros and poles")
         }
     }
+    
+    @IBAction func toggleAxes(_ sender: Any) {
+        window.graphViewController.showAxesUpdated(to: axesSwitch.state == .on)
+    }
+    
     
 }

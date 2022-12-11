@@ -103,20 +103,7 @@ public struct Function {
         
 //        return (z + Complex.i) * (Complex.pow(z - Complex.i, 2)) * (z - 1) * (z + 1) * Complex.pow(z, -3)
         
-        return (z - .i) * (z - .i) * (z - 1) / (z + .i)
-        
-//        let x = vect.x1
-//        let y = vect.x2
-        
-//        return CGPoint(
-//            x1: sin(x / y),
-//            x2: cos(x * y)
-//        )
-        
-//        return CGPoint(
-//            x1: tan(x * y),
-//            x2: tan(x / y)
-//        )
+        return Complex.exp(z.inverse)
         
 //        let x = z.x1
 //        let y = z.x2
