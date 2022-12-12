@@ -109,9 +109,9 @@
 		AEB30D0028BD41DC00EB8B8E = {
 			isa = PBXGroup;
 			children = (
-				AEB30D0B28BD41DC00EB8B8E /* Pretty Stuff */,
-				AEB30D1D28BD41DD00EB8B8E /* Pretty StuffTests */,
-				AEB30D2728BD41DD00EB8B8E /* Pretty StuffUITests */,
+				AEB30D0B28BD41DC00EB8B8E /* Domain Coloring */,
+				AEB30D1D28BD41DD00EB8B8E /* Domain ColoringTests */,
+				AEB30D2728BD41DD00EB8B8E /* Domain ColoringUITests */,
 				AEB30D0A28BD41DC00EB8B8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AEB30D0B28BD41DC00EB8B8E /* Pretty Stuff */ = {
+		AEB30D0B28BD41DC00EB8B8E /* Domain Coloring */ = {
 			isa = PBXGroup;
 			children = (
 				AEB5CA6F29453AA400C364EA /* View */,
@@ -137,24 +137,24 @@
 				AEB30D1228BD41DD00EB8B8E /* Main.storyboard */,
 				AEB30D1528BD41DD00EB8B8E /* Pretty_Stuff.entitlements */,
 			);
-			path = "Pretty Stuff";
+			path = "Domain Coloring";
 			sourceTree = "<group>";
 		};
-		AEB30D1D28BD41DD00EB8B8E /* Pretty StuffTests */ = {
+		AEB30D1D28BD41DD00EB8B8E /* Domain ColoringTests */ = {
 			isa = PBXGroup;
 			children = (
 				AEB30D1E28BD41DD00EB8B8E /* Pretty_StuffTests.swift */,
 			);
-			path = "Pretty StuffTests";
+			path = "Domain ColoringTests";
 			sourceTree = "<group>";
 		};
-		AEB30D2728BD41DD00EB8B8E /* Pretty StuffUITests */ = {
+		AEB30D2728BD41DD00EB8B8E /* Domain ColoringUITests */ = {
 			isa = PBXGroup;
 			children = (
 				AEB30D2828BD41DD00EB8B8E /* Pretty_StuffUITests.swift */,
 				AEB30D2A28BD41DD00EB8B8E /* Pretty_StuffUITestsLaunchTests.swift */,
 			);
-			path = "Pretty StuffUITests";
+			path = "Domain ColoringUITests";
 			sourceTree = "<group>";
 		};
 		AEB30D3728BD41E900EB8B8E /* Image Utility */ = {
@@ -530,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pretty Stuff/Pretty_Stuff.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Domain Coloring/Domain_Coloring.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -539,6 +539,7 @@
 				DEVELOPMENT_TEAM = JDSTZ7K2MV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Domain Coloring";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -547,7 +548,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sylvanm.Pretty-Stuff";
+				PRODUCT_BUNDLE_IDENTIFIER = "sylvanm.Domain-Coloring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -559,7 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pretty Stuff/Pretty_Stuff.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Domain Coloring/Domain_Coloring.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -568,6 +569,7 @@
 				DEVELOPMENT_TEAM = JDSTZ7K2MV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Domain Coloring";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -576,7 +578,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sylvanm.Pretty-Stuff";
+				PRODUCT_BUNDLE_IDENTIFIER = "sylvanm.Domain-Coloring";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
