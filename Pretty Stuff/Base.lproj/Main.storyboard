@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="TXw-nH-hsu">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Pretty Stuff" id="1Xt-HY-uBw">
+                            <menuItem title="Domain Coloring" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Pretty Stuff" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Domain Coloring" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Pretty Stuff" id="5kV-Vb-QxS">
+                                        <menuItem title="About Domain Coloring" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -31,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Pretty Stuff" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Domain Coloring" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -49,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Pretty Stuff" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Domain Coloring" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -662,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Pretty Stuff Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Domain Coloring Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -842,7 +841,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-je-pS5">
-                                <rect key="frame" x="24" y="195" width="135" height="32"/>
+                                <rect key="frame" x="23" y="195" width="136" height="32"/>
                                 <buttonCell key="cell" type="push" title="Find Roots/Poles" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i9E-bI-XRa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -949,11 +948,11 @@
     </scenes>
     <resources>
         <image name="NSColorPanel" width="32" height="32"/>
-        <image name="NSTouchBarGoDownTemplate" width="18" height="11"/>
-        <image name="NSTouchBarGoUpTemplate" width="18" height="11"/>
-        <image name="arrowshape.left.fill" catalog="system" width="17" height="14"/>
-        <image name="arrowshape.right.fill" catalog="system" width="17" height="14"/>
-        <image name="minus" catalog="system" width="14" height="4"/>
-        <image name="plus" catalog="system" width="14" height="13"/>
+        <image name="NSTouchBarGoDownTemplate" width="18" height="10"/>
+        <image name="NSTouchBarGoUpTemplate" width="18" height="10"/>
+        <image name="arrowshape.left.fill" catalog="system" width="32" height="32"/>
+        <image name="arrowshape.right.fill" catalog="system" width="32" height="32"/>
+        <image name="minus" catalog="system" width="32" height="32"/>
+        <image name="plus" catalog="system" width="32" height="32"/>
     </resources>
 </document>

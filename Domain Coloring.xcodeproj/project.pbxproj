@@ -30,6 +30,7 @@
 		AEB5CA7129453B4300C364EA /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5CA7029453B4300C364EA /* SidePanelViewController.swift */; };
 		AEB5CA73294573C700C364EA /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5CA72294573C700C364EA /* OverlayView.swift */; };
 		AEB5CA7529457AD400C364EA /* Function+Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5CA7429457AD400C364EA /* Function+Analysis.swift */; };
+		AEB5CA7729468A6A00C364EA /* Function+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5CA7629468A6A00C364EA /* Function+Examples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,15 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AEB30D0928BD41DC00EB8B8E /* Pretty Stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty Stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB30D0928BD41DC00EB8B8E /* Domain Coloring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Domain Coloring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB30D0C28BD41DC00EB8B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB30D0E28BD41DC00EB8B8E /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		AEB30D1028BD41DD00EB8B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB30D1328BD41DD00EB8B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEB30D1528BD41DD00EB8B8E /* Pretty_Stuff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pretty_Stuff.entitlements; sourceTree = "<group>"; };
-		AEB30D1A28BD41DD00EB8B8E /* Pretty StuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pretty StuffTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB30D1A28BD41DD00EB8B8E /* Domain ColoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Domain ColoringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB30D1E28BD41DD00EB8B8E /* Pretty_StuffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_StuffTests.swift; sourceTree = "<group>"; };
-		AEB30D2428BD41DD00EB8B8E /* Pretty StuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pretty StuffUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB30D2428BD41DD00EB8B8E /* Domain ColoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Domain ColoringUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB30D2828BD41DD00EB8B8E /* Pretty_StuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_StuffUITests.swift; sourceTree = "<group>"; };
 		AEB30D2A28BD41DD00EB8B8E /* Pretty_StuffUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pretty_StuffUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AEB30D3828BD41F800EB8B8E /* Image Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Utility.swift"; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		AEB5CA7029453B4300C364EA /* SidePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		AEB5CA72294573C700C364EA /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		AEB5CA7429457AD400C364EA /* Function+Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function+Analysis.swift"; sourceTree = "<group>"; };
+		AEB5CA7629468A6A00C364EA /* Function+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function+Examples.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +119,9 @@
 		AEB30D0A28BD41DC00EB8B8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEB30D0928BD41DC00EB8B8E /* Pretty Stuff.app */,
-				AEB30D1A28BD41DD00EB8B8E /* Pretty StuffTests.xctest */,
-				AEB30D2428BD41DD00EB8B8E /* Pretty StuffUITests.xctest */,
+				AEB30D0928BD41DC00EB8B8E /* Domain Coloring.app */,
+				AEB30D1A28BD41DD00EB8B8E /* Domain ColoringTests.xctest */,
+				AEB30D2428BD41DD00EB8B8E /* Domain ColoringUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +175,7 @@
 				AEB30D3D28BD424100EB8B8E /* Function.swift */,
 				AEB30D3F28BD424F00EB8B8E /* Set.swift */,
 				AEB5CA7429457AD400C364EA /* Function+Analysis.swift */,
+				AEB5CA7629468A6A00C364EA /* Function+Examples.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -209,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AEB30D0828BD41DC00EB8B8E /* Pretty Stuff */ = {
+		AEB30D0828BD41DC00EB8B8E /* Domain Coloring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEB30D2E28BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty Stuff" */;
+			buildConfigurationList = AEB30D2E28BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain Coloring" */;
 			buildPhases = (
 				AEB30D0528BD41DC00EB8B8E /* Sources */,
 				AEB30D0628BD41DC00EB8B8E /* Frameworks */,
@@ -221,19 +224,19 @@
 			);
 			dependencies = (
 			);
-			name = "Pretty Stuff";
+			name = "Domain Coloring";
 			packageProductDependencies = (
 				AEB30D4228BD426100EB8B8E /* ComplexModule */,
 				AEB30D4428BD426100EB8B8E /* Numerics */,
 				AEB30D4628BD426100EB8B8E /* RealModule */,
 			);
 			productName = "Pretty Stuff";
-			productReference = AEB30D0928BD41DC00EB8B8E /* Pretty Stuff.app */;
+			productReference = AEB30D0928BD41DC00EB8B8E /* Domain Coloring.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AEB30D1928BD41DD00EB8B8E /* Pretty StuffTests */ = {
+		AEB30D1928BD41DD00EB8B8E /* Domain ColoringTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEB30D3128BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty StuffTests" */;
+			buildConfigurationList = AEB30D3128BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain ColoringTests" */;
 			buildPhases = (
 				AEB30D1628BD41DD00EB8B8E /* Sources */,
 				AEB30D1728BD41DD00EB8B8E /* Frameworks */,
@@ -244,14 +247,14 @@
 			dependencies = (
 				AEB30D1C28BD41DD00EB8B8E /* PBXTargetDependency */,
 			);
-			name = "Pretty StuffTests";
+			name = "Domain ColoringTests";
 			productName = "Pretty StuffTests";
-			productReference = AEB30D1A28BD41DD00EB8B8E /* Pretty StuffTests.xctest */;
+			productReference = AEB30D1A28BD41DD00EB8B8E /* Domain ColoringTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AEB30D2328BD41DD00EB8B8E /* Pretty StuffUITests */ = {
+		AEB30D2328BD41DD00EB8B8E /* Domain ColoringUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEB30D3428BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty StuffUITests" */;
+			buildConfigurationList = AEB30D3428BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain ColoringUITests" */;
 			buildPhases = (
 				AEB30D2028BD41DD00EB8B8E /* Sources */,
 				AEB30D2128BD41DD00EB8B8E /* Frameworks */,
@@ -262,9 +265,9 @@
 			dependencies = (
 				AEB30D2628BD41DD00EB8B8E /* PBXTargetDependency */,
 			);
-			name = "Pretty StuffUITests";
+			name = "Domain ColoringUITests";
 			productName = "Pretty StuffUITests";
-			productReference = AEB30D2428BD41DD00EB8B8E /* Pretty StuffUITests.xctest */;
+			productReference = AEB30D2428BD41DD00EB8B8E /* Domain ColoringUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AEB30D0428BD41DC00EB8B8E /* Build configuration list for PBXProject "Pretty Stuff" */;
+			buildConfigurationList = AEB30D0428BD41DC00EB8B8E /* Build configuration list for PBXProject "Domain Coloring" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -306,9 +309,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEB30D0828BD41DC00EB8B8E /* Pretty Stuff */,
-				AEB30D1928BD41DD00EB8B8E /* Pretty StuffTests */,
-				AEB30D2328BD41DD00EB8B8E /* Pretty StuffUITests */,
+				AEB30D0828BD41DC00EB8B8E /* Domain Coloring */,
+				AEB30D1928BD41DD00EB8B8E /* Domain ColoringTests */,
+				AEB30D2328BD41DD00EB8B8E /* Domain ColoringUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +349,7 @@
 			files = (
 				AEB30D0F28BD41DC00EB8B8E /* GraphViewController.swift in Sources */,
 				AEB30D5528BD49AF00EB8B8E /* Colors.swift in Sources */,
+				AEB5CA7729468A6A00C364EA /* Function+Examples.swift in Sources */,
 				AEB30D3928BD41F800EB8B8E /* Image Utility.swift in Sources */,
 				AEB30D4028BD424F00EB8B8E /* Set.swift in Sources */,
 				AEB5CA7529457AD400C364EA /* Function+Analysis.swift in Sources */,
@@ -384,12 +388,12 @@
 /* Begin PBXTargetDependency section */
 		AEB30D1C28BD41DD00EB8B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AEB30D0828BD41DC00EB8B8E /* Pretty Stuff */;
+			target = AEB30D0828BD41DC00EB8B8E /* Domain Coloring */;
 			targetProxy = AEB30D1B28BD41DD00EB8B8E /* PBXContainerItemProxy */;
 		};
 		AEB30D2628BD41DD00EB8B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AEB30D0828BD41DC00EB8B8E /* Pretty Stuff */;
+			target = AEB30D0828BD41DC00EB8B8E /* Domain Coloring */;
 			targetProxy = AEB30D2528BD41DD00EB8B8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -595,7 +599,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pretty Stuff.app/Contents/MacOS/Pretty Stuff";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domain Coloring.app/Contents/MacOS/Domain Coloring";
 			};
 			name = Debug;
 		};
@@ -615,7 +619,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pretty Stuff.app/Contents/MacOS/Pretty Stuff";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Domain Coloring.app/Contents/MacOS/Domain Coloring";
 			};
 			name = Release;
 		};
@@ -658,7 +662,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AEB30D0428BD41DC00EB8B8E /* Build configuration list for PBXProject "Pretty Stuff" */ = {
+		AEB30D0428BD41DC00EB8B8E /* Build configuration list for PBXProject "Domain Coloring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEB30D2C28BD41DD00EB8B8E /* Debug */,
@@ -667,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEB30D2E28BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty Stuff" */ = {
+		AEB30D2E28BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain Coloring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEB30D2F28BD41DD00EB8B8E /* Debug */,
@@ -676,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEB30D3128BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty StuffTests" */ = {
+		AEB30D3128BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain ColoringTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEB30D3228BD41DD00EB8B8E /* Debug */,
@@ -685,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEB30D3428BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Pretty StuffUITests" */ = {
+		AEB30D3428BD41DD00EB8B8E /* Build configuration list for PBXNativeTarget "Domain ColoringUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEB30D3528BD41DD00EB8B8E /* Debug */,
